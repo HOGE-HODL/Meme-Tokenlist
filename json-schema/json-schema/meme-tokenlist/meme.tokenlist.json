@@ -1,5 +1,5 @@
 {
-  "name": "Meme Token List",
+  "name": "HOGE coin",
   "logoURI": "https://hoge.finance/static/media/hoge.e87543d3.png",
   "keywords": [
     "audited",
@@ -18,7 +18,7 @@
       "chainId": 1,
       "address": "0xfad45e47083e4607302aa43c65fb3106f1cd7607",
       "symbol": "HOGE",
-      "name": "Hoge Meme Coin",
+      "name": "Hoge Coin",
       "decimals": 9,
       "logoURI": "https://hoge.finance/static/media/hoge.e87543d3.png",
       "tags": [
