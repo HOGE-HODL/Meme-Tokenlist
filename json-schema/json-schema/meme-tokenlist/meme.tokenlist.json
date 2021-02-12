@@ -1,0 +1,34 @@
+{
+  "name": "Meme Token List",
+  "logoURI": "ipfs://QmUSNbwUxUYNMvMksKypkgWs8unSm8dX2GjCPBVGZ7GGMr",
+  "keywords": [
+    "audited",
+    "verified",
+    "special tokens"
+  ],
+  "tags": {
+    "meme": {
+      "name": "Memecoin",
+      "description": "Just HOGL"
+    }
+  },
+  "timestamp": "2021-02-12T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xfad45e47083e4607302aa43c65fb3106f1cd7607",
+      "symbol": "HOGE",
+      "name": "Hoge Meme Coin",
+      "decimals": 9,
+      "logoURI": "https://hoge.finance/static/media/hoge.e87543d3.png",
+      "tags": [
+        "meme"
+      ]
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

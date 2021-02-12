@@ -1,0 +1,244 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1613089666.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "name",
+    "logoURI",
+    "keywords",
+    "tags",
+    "timestamp",
+    "tokens",
+    "version"
+  ],
+  "properties": {
+    "name": {
+      "$id": "#root/name",
+      "title": "Name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Meme Token List"
+      ],
+      "pattern": "^.*$"
+    },
+    "logoURI": {
+      "$id": "#root/logoURI",
+      "title": "Logouri",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "ipfs://QmUSNbwUxUYNMvMksKypkgWs8unSm8dX2GjCPBVGZ7GGMr"
+      ],
+      "pattern": "^.*$"
+    },
+    "keywords": {
+      "$id": "#root/keywords",
+      "title": "Keywords",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/keywords/items",
+        "title": "Items",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "audited"
+        ],
+        "pattern": "^.*$"
+      }
+    },
+    "tags": {
+      "$id": "#root/tags",
+      "title": "Tags",
+      "type": "object",
+      "required": [
+        "meme"
+      ],
+      "properties": {
+        "meme": {
+          "$id": "#root/tags/meme",
+          "title": "Meme",
+          "type": "object",
+          "required": [
+            "name",
+            "description"
+          ],
+          "properties": {
+            "name": {
+              "$id": "#root/tags/meme/name",
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Memecoin"
+              ],
+              "pattern": "^.*$"
+            },
+            "description": {
+              "$id": "#root/tags/meme/description",
+              "title": "Description",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Just HOGL"
+              ],
+              "pattern": "^.*$"
+            }
+          }
+        }
+
+      }
+    }
+  ,
+    "timestamp": {
+      "$id": "#root/timestamp",
+      "title": "Timestamp",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2021-02-12T00:00:00+00:00"
+      ],
+      "pattern": "^.*$"
+    },
+    "tokens": {
+      "$id": "#root/tokens",
+      "title": "Tokens",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/tokens/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "chainId",
+          "address",
+          "symbol",
+          "name",
+          "decimals",
+          "logoURI",
+          "tags"
+        ],
+        "properties": {
+          "chainId": {
+            "$id": "#root/tokens/items/chainId",
+            "title": "Chainid",
+            "type": "integer",
+            "examples": [
+              1
+            ],
+            "default": 0
+          },
+          "address": {
+            "$id": "#root/tokens/items/address",
+            "title": "Address",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "0xfad45e47083e4607302aa43c65fb3106f1cd7607"
+            ],
+            "pattern": "^.*$"
+          },
+          "symbol": {
+            "$id": "#root/tokens/items/symbol",
+            "title": "Symbol",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "HOGE"
+            ],
+            "pattern": "^.*$"
+          },
+          "name": {
+            "$id": "#root/tokens/items/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Hoge Meme Coin"
+            ],
+            "pattern": "^.*$"
+          },
+          "decimals": {
+            "$id": "#root/tokens/items/decimals",
+            "title": "Decimals",
+            "type": "integer",
+            "examples": [
+              9
+            ],
+            "default": 0
+          },
+          "logoURI": {
+            "$id": "#root/tokens/items/logoURI",
+            "title": "Logouri",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "https://hoge.finance/static/media/hoge.e87543d3.png"
+            ],
+            "pattern": "^.*$"
+          },
+          "tags": {
+            "$id": "#root/tokens/items/tags",
+            "title": "Tags",
+            "type": "array",
+            "default": [],
+            "items":{
+              "$id": "#root/tokens/items/tags/items",
+              "title": "Items",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "meme"
+              ],
+              "pattern": "^.*$"
+            }
+          }
+        }
+      }
+
+    },
+    "version": {
+      "$id": "#root/version",
+      "title": "Version",
+      "type": "object",
+      "required": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "properties": {
+        "major": {
+          "$id": "#root/version/major",
+          "title": "Major",
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "default": 0
+        },
+        "minor": {
+          "$id": "#root/version/minor",
+          "title": "Minor",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "patch": {
+          "$id": "#root/version/patch",
+          "title": "Patch",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        }
+      }
+    }
+
+  }
+}
